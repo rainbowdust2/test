@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html><head><title>Project 1</title>
+
+<script type="text/javascript">
+
+function totalCost() {
+  var item;
+  var quantity;
+  var total;
+
+    item=document.price.item.value
+    quantity=document.price.quantity.value
+    total= item * quantity + .06 * (item * quantity)
+    document.price.total.value = total;
+}    
+
+
+</script>   
+
+</head><body>
+
+<form name="price">
+<p><input type="text" name="item"> Enter item cost</p>    
+<p><input type="text" name="quantity"> Enter quantity purchased</p>
+<p><input type="button" value="Click for Total" onclick="totalCost()">
+<input type="reset" value="reset boxes"></p>
+<p><input type="text" size="30" name="total"> Total cost with 6% tax</p>
+</form>  
+ 
+</body></html>
